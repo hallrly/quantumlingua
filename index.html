@@ -29,7 +29,12 @@
       width: 160px;
       height: auto;
       margin-bottom: 40px;
-      filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.2));
+      filter: drop-shadow(0 0 10px rgba(255,255,255,0.2)) brightness(1.2);
+      transition: transform 0.3s ease;
+    }
+
+    .logo:hover {
+      transform: scale(1.05);
     }
 
     h1 {
@@ -58,7 +63,7 @@
   </style>
 </head>
 <body>
-  <img class="logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA..." alt="QuantumLingua Logo">
+  <img class="logo" src="quantumlingua/name.png" alt="QuantumLingua Logo">
   <h1>Work in Progress</h1>
   <p>We’re building something amazing. Stay tuned.</p>
   <footer>© QuantumLingua 2025</footer>
