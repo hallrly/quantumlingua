@@ -1,2 +1,0 @@
-# quantumlingua
-website WIP page
