@@ -1,65 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Upcoming Projects - QuantumLingua</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/animations.css">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upcoming Projects - Quantum Lingua</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Loading Screen -->
-    <div class="loading-screen">
-        <div class="loading-content">
-            <img src="images/logo-white.png" alt="QuantumLingua" class="loading-logo">
-            <div class="loading-bar">
-                <div class="loading-progress"></div>
+  <header class="header">
+    <div class="container header-container">
+      <a href="index.html">
+        <img src="images/logo.png" alt="Quantum Lingua" class="logo">
+      </a>
+      <nav class="nav">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="ongoing.html" class="nav-link">Ongoing</a></li>
+          <li><a href="upcoming.html" class="nav-link active">Upcoming</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="section">
+      <div class="container">
+        <h1 class="section-title">Future Translation Missions</h1>
+        <div class="projects-grid">
+          <div class="project-card fade-in" style="opacity: 0; transform: translateY(20px);">
+            <img src="images/deliver-cover.jpg" alt="Deliver At All Costs" class="project-image">
+            <div class="project-content">
+              <h2 class="project-title">DELIVER AT ALL COSTS</h2>
+              <div class="project-meta">
+                <span>Developer: Red Rivers Interactive</span>
+                <span>Genre: Survival Horror</span>
+                <span>Target: Turkish</span>
+              </div>
+              <p>Scheduled to begin Q1 2024. Preparation work in progress.</p>
             </div>
-            <p class="loading-text">INITIALIZING SYSTEMS...</p>
+          </div>
         </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="copyright">&copy; 2023 Quantum Lingua. All rights reserved.</p>
     </div>
+  </footer>
 
-    <div class="main-content">
-        <header class="futuristic-header">
-            <div class="logo-container">
-                <img src="images/logo.png" alt="QuantumLingua" class="main-logo">
-            </div>
-            <nav class="futuristic-nav">
-                <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="about.html">ABOUT US</a></li>
-                    <li><a href="ongoing.html">ONGOING PROJECTS</a></li>
-                    <li><a href="upcoming.html" class="active">UPCOMING PROJECTS</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <main class="futuristic-main upcoming-page">
-            <h1 class="page-title glowing-text">FUTURE TRANSLATION MISSIONS</h1>
-            
-            <div class="project-card">
-                <div class="project-image" style="background-image: url('images/deliver-cover.jpg');">
-                    <div class="project-status">COMING SOON</div>
-                </div>
-                <div class="project-details">
-                    <h2>DELIVER AT ALL COSTS</h2>
-                    <div class="project-meta">
-                        <span>Developer: Red Rivers Interactive</span>
-                        <span>Genre: Survival Horror</span>
-                        <span>Target Language: Turkish</span>
-                    </div>
-                </div>
-            </div>
-        </main>
-
-        <footer class="futuristic-footer">
-            <p>&copy; 2023 QUANTUMLINGUA. ALL RIGHTS RESERVED.</p>
-        </footer>
-    </div>
-
-    <script src="js/loading.js"></script>
-    <script src="js/main.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
