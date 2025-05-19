@@ -1,77 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QuantumLingua - Gaming Translation Specialists</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/animations.css">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quantum Lingua - Professional Game Localization</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <body>
-    <!-- Loading Screen -->
-    <div class="loading-screen">
-        <div class="loading-content">
-            <img src="images/logo-white.png" alt="QuantumLingua" class="loading-logo">
-            <div class="loading-bar">
-                <div class="loading-progress"></div>
-            </div>
-            <p class="loading-text">INITIALIZING SYSTEMS...</p>
+  <header class="header">
+    <div class="container header-container">
+      <a href="index.html">
+        <img src="images/logo.png" alt="Quantum Lingua" class="logo">
+      </a>
+      <nav class="nav">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="ongoing.html" class="nav-link">Ongoing</a></li>
+          <li><a href="upcoming.html" class="nav-link">Upcoming</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content fade-in" style="opacity: 0; transform: translateY(20px);">
+          <h1 class="hero-title">BRIDGING WORLDS THROUGH LANGUAGE</h1>
+          <p class="hero-subtitle">Professional game localization services with a passion for gaming and linguistic excellence</p>
+          <div class="btn-group">
+            <a href="ongoing.html" class="btn">View Projects</a>
+            <a href="contact.html" class="btn btn-outline">Get in Touch</a>
+          </div>
         </div>
-    </div>
+      </div>
+    </section>
 
-    <div class="main-content">
-        <header class="futuristic-header">
-            <div class="logo-container">
-                <img src="images/logo.png" alt="QuantumLingua" class="main-logo">
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Our Services</h2>
+        <div class="projects-grid">
+          <div class="project-card fade-in" style="opacity: 0; transform: translateY(20px);">
+            <img src="images/exp33-cover.jpg" alt="Game Localization" class="project-image">
+            <div class="project-content">
+              <h3 class="project-title">Game Localization</h3>
+              <div class="project-meta">
+                <span>Full translation</span>
+                <span>Cultural adaptation</span>
+                <span>QA testing</span>
+              </div>
+              <p>We provide complete localization services tailored specifically for Turkish audiences.</p>
             </div>
-            <nav class="futuristic-nav">
-                <ul>
-                    <li><a href="index.html" class="active">HOME</a></li>
-                    <li><a href="about.html">ABOUT US</a></li>
-                    <li><a href="ongoing.html">ONGOING PROJECTS</a></li>
-                    <li><a href="upcoming.html">UPCOMING PROJECTS</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <!-- Scrolling Game Background (Only Expedition 33) -->
-        <div class="game-scroll-container">
-            <div class="game-scroll-track">
-                <div class="game-scroll-item" style="background-image: url('images/exp33-cover.jpg');">
-                    <div class="game-scroll-overlay">
-                        <h3>CLAIR OBSCUR: EXPEDITION 33</h3>
-                        <p>Turkish Translation in Progress</p>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+      </div>
+    </section>
+  </main>
 
-        <!-- Simplified Main Content -->
-        <main class="futuristic-main">
-  <section class="intro-section">
-    <h1>QUANTUM LINGUA</h1>
-    <h2>BRIDGING WORLDS THROUGH LANGUAGE</h2>
-    <p>Professional game localization for Turkish audiences</p>
-    <div class="cta-buttons">
-      <a href="ongoing.html" class="futuristic-button">VIEW PROJECTS</a>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-links">
+        <a href="privacy.html" class="footer-link">Privacy Policy</a>
+        <a href="terms.html" class="footer-link">Terms of Service</a>
+      </div>
+      <p class="copyright">&copy; 2023 Quantum Lingua. All rights reserved.</p>
     </div>
-  </section>
-  
-  <section class="featured-games">
-    <div class="game-scroll-container">
-      <!-- Your game slides here -->
-    </div>
-  </section>
-</main>
+  </footer>
 
-        <footer class="futuristic-footer">
-            <p>&copy; 2023 QUANTUMLINGUA. ALL RIGHTS RESERVED.</p>
-        </footer>
-    </div>
-
-    <script src="js/loading.js"></script>
-    <script src="js/main.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
