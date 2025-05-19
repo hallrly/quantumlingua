@@ -5,46 +5,59 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ongoing Projects - Quantum Lingua</title>
   <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="header">
-    <img src="images/logo.png" alt="Quantum Lingua" class="logo">
-    <ul class="nav-list">
-      <li><a href="index.html" class="nav-link">HOME</a></li>
-      <li><a href="about.html" class="nav-link">ABOUT</a></li>
-      <li><a href="ongoing.html" class="nav-link active">ONGOING</a></li>
-      <li><a href="upcoming.html" class="nav-link">UPCOMING</a></li>
-      <li><a href="contact.html" class="nav-link">CONTACT</a></li>
-    </ul>
+    <div class="container header-container">
+      <a href="index.html">
+        <img src="images/logo.png" alt="Quantum Lingua" class="logo">
+      </a>
+      <nav class="nav">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="ongoing.html" class="nav-link active">Ongoing</a></li>
+          <li><a href="upcoming.html" class="nav-link">Upcoming</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main class="main">
-    <h1>CURRENT TRANSLATION MISSIONS</h1>
-    
-    <div class="project-card">
-      <div class="project-header">
-        <img src="images/exp33-cover.jpg" alt="Expedition 33" class="project-image">
-        <div>
-          <h2>CLAIR OBSCUR: EXPEDITION 33</h2>
-          <div class="project-meta">
-            <span>Developer: Sandfall Interactive</span>
-            <span>Genre: Tactical RPG</span>
-            <span>Target: Turkish</span>
+    <section class="section">
+      <div class="container">
+        <h1 class="section-title">Current Translation Missions</h1>
+        <div class="projects-grid">
+          <div class="project-card fade-in" style="opacity: 0; transform: translateY(20px);">
+            <img src="images/exp33-cover.jpg" alt="Clair Obscur: Expedition 33" class="project-image">
+            <div class="project-content">
+              <h2 class="project-title">CLAIR OBSCUR: EXPEDITION 33</h2>
+              <div class="project-meta">
+                <span>Developer: Don't Nod</span>
+                <span>Genre: Tactical RPG</span>
+                <span>Target: Turkish</span>
+              </div>
+              <div class="progress-container">
+                <div class="progress-label">
+                  <span>Translation Progress</span>
+                  <span>5%</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-fill" data-progress="5"></div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      
-      <h3>TRANSLATION PROGRESS</h3>
-      <div class="progress-bar">
-        <div class="progress-fill"></div>
-      </div>
-      <p>Current progress: 5%</p>
-    </div>
+    </section>
   </main>
 
   <footer class="footer">
-    <p>&copy; 2023 QUANTUM LINGUA. ALL RIGHTS RESERVED.</p>
+    <div class="container">
+      <p class="copyright">&copy; 2023 Quantum Lingua. All rights reserved.</p>
+    </div>
   </footer>
 
   <script src="js/main.js"></script>
