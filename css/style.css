@@ -36,13 +36,13 @@ body {
   padding: 0 20px;
 }
 
-/* ===== HEADER (UPDATED) ===== */
+/* ===== HEADER (ONLY LOGO SIZE CHANGED) ===== */
 .header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  padding: 20px 0; /* Increased from 15px */
+  padding: 15px 0;
   background: rgba(10, 10, 20, 0.98);
   backdrop-filter: blur(8px);
   z-index: 1000;
@@ -56,7 +56,7 @@ body {
 }
 
 .logo {
-  height: 50px; /* Increased from 30px */
+  height: 70px; /* ONLY CHANGE: Increased from 30px to 70px */
   transition: var(--transition);
 }
 
@@ -103,7 +103,7 @@ body {
   width: 100%;
 }
 
-/* ===== HERO SECTION (UPDATED) ===== */
+/* ===== HERO SECTION ===== */
 .hero {
   height: 100vh;
   display: flex;
@@ -422,7 +422,7 @@ body {
   }
   
   .logo {
-    height: 40px; /* Adjusted for mobile */
+    height: 60px; /* Adjusted for mobile */
   }
   
   .btn-group {
