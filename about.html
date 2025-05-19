@@ -1,60 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - QuantumLingua</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/animations.css">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Quantum Lingua</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Loading Screen (same as index.html) -->
-    <div class="loading-screen">
-        <div class="loading-content">
-            <img src="images/logo-white.png" alt="QuantumLingua" class="loading-logo">
-            <div class="loading-bar">
-                <div class="loading-progress"></div>
-            </div>
-            <p class="loading-text">INITIALIZING SYSTEMS...</p>
+  <header class="header">
+    <div class="container header-container">
+      <a href="index.html">
+        <img src="images/logo.png" alt="Quantum Lingua" class="logo">
+      </a>
+      <nav class="nav">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link active">About</a></li>
+          <li><a href="ongoing.html" class="nav-link">Ongoing</a></li>
+          <li><a href="upcoming.html" class="nav-link">Upcoming</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="section">
+      <div class="container">
+        <h1 class="section-title">About Quantum Lingua</h1>
+        <div class="about-content">
+          <div class="about-text fade-in" style="opacity: 0; transform: translateY(20px);">
+            <p>At Quantum Lingua, we are more than just translators - we are passionate gamers who understand that localization is an art form. Our team consists of industry-certified linguists who have undergone rigorous training in both language specialization and game design principles.</p>
+            <p>We approach each project with the seriousness it deserves, employing a multi-stage quality assurance process that includes cultural consultation, gameplay testing, and community feedback integration. Our work isn't done until the translation feels like it was crafted specifically for each target language from the very beginning.</p>
+          </div>
+          <div class="about-image fade-in" style="opacity: 0; transform: translateY(20px);">
+            <img src="images/exp33-cover.jpg" alt="Our Team" style="width: 100%; border-radius: 8px;">
+          </div>
         </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="copyright">&copy; 2023 Quantum Lingua. All rights reserved.</p>
     </div>
+  </footer>
 
-    <div class="main-content">
-        <header class="futuristic-header">
-            <div class="logo-container">
-                <img src="images/logo.png" alt="QuantumLingua" class="main-logo">
-            </div>
-            <nav class="futuristic-nav">
-                <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="about.html" class="active">ABOUT US</a></li>
-                    <li><a href="ongoing.html">ONGOING PROJECTS</a></li>
-                    <li><a href="upcoming.html">UPCOMING PROJECTS</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <main class="futuristic-main about-page">
-            <section class="about-hero">
-                <h1 class="glowing-text">GAMERS. TRANSLATORS. PERFECTIONISTS.</h1>
-            </section>
-
-            <section class="about-content">
-                <div class="about-text">
-                    <p>At QuantumLingua, we are more than just translators - we are passionate gamers who understand that localization is an art form. Our team consists of industry-certified linguists who have undergone rigorous training in both language specialization and game design principles.</p>
-                    <p>We approach each project with the seriousness it deserves, employing a multi-stage quality assurance process that includes cultural consultation, gameplay testing, and community feedback integration. Our work isn't done until the translation feels like it was crafted specifically for Turkish audiences from the very beginning.</p>
-                </div>
-            </section>
-        </main>
-
-        <footer class="futuristic-footer">
-            <p>&copy; 2023 QUANTUMLINGUA. ALL RIGHTS RESERVED.</p>
-        </footer>
-    </div>
-
-    <script src="js/loading.js"></script>
-    <script src="js/main.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
