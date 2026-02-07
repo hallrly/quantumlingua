@@ -42,7 +42,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 15px 0;
+  padding: 4px 0;
   background: rgba(10, 10, 20, 0.98);
   backdrop-filter: blur(8px);
   z-index: 1000;
@@ -56,7 +56,7 @@ body {
 }
 
 .logo {
-  height: 200px; /* ONLY CHANGE: Increased from 30px to 70px */
+  height: 52px; /* 30px-70px arası olması lazım tercihen 52px */
   transition: var(--transition);
 }
 
@@ -110,28 +110,34 @@ body {
   align-items: center;
   position: relative;
   overflow: hidden;
-  background: 
-    linear-gradient(to right, rgba(5,5,10,0.95), rgba(5,5,10,0.7)),
-    url('../images/exp33-cover.jpg') center/cover no-repeat;
 }
 
+/* Sliding background */
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  transition: opacity 1s ease-in-out;
+  z-index: 0;
+}
+
+/* Dark gradient overlay stays */
 .hero::before {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.4);
+  inset: 0;
+  background: 
+    linear-gradient(to right, rgba(5,5,10,0.85), rgba(5,5,10,0.6)),
+    rgba(0, 0, 0, 0.3);
   z-index: 1;
 }
 
 .hero-content {
   position: relative;
   z-index: 2;
-  max-width: 600px;
 }
-
 .hero-title {
   font-size: 3rem;
   margin-bottom: 20px;
